@@ -1,0 +1,31 @@
+<html>
+<body>
+  <h2>Details for {{butt}}</h2>
+  {{#if result}}
+    <li>Butt: {{ result.butt }}
+    <li>Casino: {{ result.casino }}
+    <li>Area: {{ result.area }}
+        <li>Type: {{ result.type }}
+            <li>Day: {{ result.day }}
+                <li>Starting Time: {{ result.startingtime }}
+                    <li>Buy In: {{ result.buyin }}
+                        <li>Starting Stack: {{ result.startingstack }}
+                            <li>Round Time: {{ result.roundtime }}
+                                <li>Elimination Level: {{ result.eliminationlevel }}
+                                    <li>Time Lasted: {{ result.timelasted }}
+    <p>
+    <a href="/delete?butt={{result.butt}}">Delete?</a>
+</p>
+         <p>
+        <button> <a href=/>Home</a></button>
+        </p>
+  {{else}}
+ <p> Not Found</p>
+  <a href=/>Home</a>
+    
+  {{/if}}
+ <script>
+   
+ </script>
+</body>
+</html
